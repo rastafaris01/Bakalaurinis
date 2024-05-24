@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars Data</title>
+</head>
+<body>
+    <h1>Cars Data</h1>
+    <h2>Transmissions</h2>
+    <ul>
+        {% for transmission in transmissions %}
+        <li>{{ transmission.Transmission }} - {{ transmission.Transmission_Type }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Engines</h2>
+    <ul>
+        {% for engine in engines %}
+        <li>{{ engine.Engine_Type }} - {{ engine.CC_Displacement }} - {{ engine.Power_BHP }} - {{ engine.Torque_Nm }} - {{ engine.Fuel_Type }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Model Types</h2>
+    <ul>
+        {% for model_type in model_types %}
+        <li>{{ model_type.Make }} - {{ model_type.Body_Type }} - {{ model_type.Seating_Capacity }} - {{ model_type.Fuel_Tank_Capacity }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Models</h2>
+    <ul>
+        {% for model in models %}
+        <li>{{ model.Car_Name }} - {{ model.Mileage_kmpl }} - {{ model.Model }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Market</h2>
+    <ul>
+        {% for market in markets %}
+        <li>{{ market.Price }} - {{ market.Make_Year }} - {{ market.Color }} - {{ market.Mileage_Run }} - {{ market.No_of_Owners }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

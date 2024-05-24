@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engines</title>
+    <link rel="stylesheet" href="static/styles.css">
+
+</head>
+<body>
+    <h2>Engines</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Engine Type</th>
+                <th>CC Displacement</th>
+                <th>Power (BHP)</th>
+                <th>Torque (Nm)</th>
+                <th>Fuel Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for engine in engines %}
+            <tr>
+                <td>{{ engine.Engine_Type }}</td>
+                <td>{{ engine.CC_Displacement }}</td>
+                <td>{{ engine.Power_BHP }}</td>
+                <td>{{ engine.Torque_Nm }}</td>
+                <td>{{ engine.Fuel_Type }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <h2>Market</h2>
+   <table>
+        <thead>
+            <tr>
+                <th>Price</th>
+                <th>Make Year</th>
+                <th>Color</th>
+                <th>Mileage Run</th>
+                <th>No of Owners</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for market in  markets %}
+            <tr>
+                <td>{{ market.Price }}</td>
+                <td>{{ market.Make_Year }}</td>
+                <td>{{ market.Color }}</td>
+                <td>{{ market.Mileage_Run }}</td>
+                <td>{{ market.No_of_Owners }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

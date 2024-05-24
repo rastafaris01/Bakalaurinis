@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engines</title>
+    <link rel="stylesheet" href="static/styles.css">
+
+</head>
+<body>
+    <h2>Transmissions</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Transmission</th>
+                <th>Transmission Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transmission in transmissions %}
+            <tr>
+                <td>{{ transmission.Transmission }}</td>
+                <td>{{ transmission.Transmission_Type }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+
+
+</body>
+</html>

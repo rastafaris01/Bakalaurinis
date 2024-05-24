@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <h2>Model Types</h2>
+   <table>
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Body Type</th>
+                <th>Seating Capacity</th>
+                <th>Fuel Tank Capacity</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for modeltype in modeltypes %}
+            <tr>
+                <td>{{ modeltype.Make }}</td>
+                <td>{{ modeltype.Body_Type }}</td>
+                <td>{{ modeltype.Seating_Capacity }}</td>
+                <td>{{ modeltype.Fuel_Tank_Capacity }}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

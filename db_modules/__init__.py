@@ -4,6 +4,7 @@ from constants.constant_url import URL
 from db_modules.db_tables import Transmission, Engine, ModelTypes, Model, Market
 from flask import Flask
 from db_modules.db_management import AutoDB
+from db_modules.db_tables import create_tables
 
 Base = declarative_base()
 
@@ -16,8 +17,7 @@ auto_db = AutoDB()
 auto_db.load_data()
 
 
-def create_all_tables():
-    Base.metadata.create_all(engine)
+create_tables()
 
 
 app = Flask(__name__)

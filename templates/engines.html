@@ -11,6 +11,7 @@
     <table>
         <thead>
             <tr>
+                <th>Engine ID</th>
                 <th>Engine Type</th>
                 <th>CC Displacement</th>
                 <th>Power (BHP)</th>
@@ -21,6 +22,7 @@
         <tbody>
             {% for engine in engines %}
             <tr>
+                <td>{{ engine.Engine_id }}</td>
                 <td>{{ engine.Engine_Type }}</td>
                 <td>{{ engine.CC_Displacement }}</td>
                 <td>{{ engine.Power_BHP }}</td>

@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Model Types</title>
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-  <h2>Model Types</h2>
-   <table>
+    <h2>Model Types</h2>
+    <table>
         <thead>
             <tr>
+                <th>Model Type Id</th>
                 <th>Make</th>
                 <th>Body Type</th>
                 <th>Seating Capacity</th>
                 <th>Fuel Tank Capacity</th>
-
             </tr>
         </thead>
         <tbody>
-            {% for modeltype in modeltypes %}
+            {% for model_type in model_types %}
             <tr>
-                <td>{{ modeltype.Make }}</td>
-                <td>{{ modeltype.Body_Type }}</td>
-                <td>{{ modeltype.Seating_Capacity }}</td>
-                <td>{{ modeltype.Fuel_Tank_Capacity }}</td>
-
+                <td>{{ model_type.Model_type_id }}</td>
+                <td>{{ model_type.Make }}</td>
+                <td>{{ model_type.Body_Type }}</td>
+                <td>{{ model_type.Seating_Capacity }}</td>
+                <td>{{ model_type.Fuel_Tank_Capacity }}</td>
             </tr>
             {% endfor %}
         </tbody>

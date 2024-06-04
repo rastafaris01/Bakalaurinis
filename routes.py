@@ -1,8 +1,10 @@
+from typing import List, Type
+
 from flask import Flask, render_template
-from db_modules.db_tables import session, Transmission, Engine, ModelTypes, Model, Market
+
+from db_modules.db_tables import session, Transmission, Engine, Model, ModelTypes, Market
 
 app = Flask(__name__)
-
 
 @app.route("/")
 def home():
@@ -16,7 +18,7 @@ def transmissions():
 @app.route("/engines")
 def engines():
     engines = session.query(Engine).all()
-    return render_template("engine.html", engines=engines)
+    return render_template("engines.html", engines=engines)
 
 @app.route('/models')
 def models():
@@ -25,14 +27,13 @@ def models():
 
 @app.route('/model_types')
 def model_types():
-    modeltypes = session.query(ModelTypes).all()
-    return render_template('model_types.html', modeltypes=modeltypes)
+    model_types = session.query(ModelTypes).all()
+    return render_template('model_types.html', model_types=model_types)
 
 @app.route('/markets')
 def markets():
-    markets =session.query(Market).all()
+    markets = session.query(Market).all()
     return render_template('markets.html', markets=markets)
-
 
 @app.route("/cars")
 def cars():
@@ -41,8 +42,5 @@ def cars():
     model_types = session.query(ModelTypes).all()
     models = session.query(Model).all()
     markets = session.query(Market).all()
-    return render_template("cars.html", transmissions=transmissions, engines=engines, model_types=model_types, models=models, markets=markets)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
+    return render_template("cars.html", transmissions=transmissions, engines=engines,
+                           model_types=model_types, models=models, markets=markets)

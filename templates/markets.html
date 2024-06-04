@@ -2,29 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Markets</title>
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-  <h2>Market</h2>
-   <table>
+    <h2>Market</h2>
+    <table>
         <thead>
             <tr>
+                <th>Market ID</th>
                 <th>Price</th>
                 <th>Make Year</th>
                 <th>Color</th>
                 <th>Mileage Run</th>
                 <th>No of Owners</th>
+                <th>Model ID</th>
             </tr>
         </thead>
         <tbody>
             {% for market in markets %}
             <tr>
+                <td>{{ market.Market_id }}</td>
                 <td>{{ market.Price }}</td>
                 <td>{{ market.Make_Year }}</td>
                 <td>{{ market.Color }}</td>
                 <td>{{ market.Mileage_Run }}</td>
                 <td>{{ market.No_of_Owners }}</td>
+                <td>{{ market.Model_id }}</td>
             </tr>
             {% endfor %}
         </tbody>

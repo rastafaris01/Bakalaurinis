@@ -2,27 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Models</title>
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
- <h2>Models</h2>
+    <h2>Models</h2>
     <table>
         <thead>
             <tr>
+                <th>Model Id</th>
                 <th>Car Name</th>
                 <th>Mileage km per litre</th>
                 <th>Model</th>
-
+                <th>Transmission Id</th>
+                <th>Engine Id</th>
+                <th>Model Type Id</th>
             </tr>
         </thead>
         <tbody>
             {% for model in models %}
             <tr>
+                <td>{{ model.Model_id }}</td>
                 <td>{{ model.Car_Name }}</td>
                 <td>{{ model.Mileage_kmpl }}</td>
                 <td>{{ model.Model }}</td>
-
+                <td>{{ model.Transmission_id }}</td>
+                <td>{{ model.Engine_id }}</td>
+                <td>{{ model.Model_type_id }}</td>
             </tr>
             {% endfor %}
         </tbody>

@@ -19,6 +19,7 @@
     <table>
         <thead>
             <tr>
+                <th>Transmission ID</th>
                 <th>Transmission</th>
                 <th>Transmission Type</th>
             </tr>
@@ -26,6 +27,7 @@
         <tbody>
             {% for transmission in transmissions %}
             <tr>
+                <td>{{ transmission.Transmission_id }}</td>
                 <td>{{ transmission.Transmission }}</td>
                 <td>{{ transmission.Transmission_Type }}</td>
             </tr>

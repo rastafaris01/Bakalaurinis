@@ -1,5 +1,5 @@
 # """
-# Columns name in DB
+# Column name in DB
 # """
 #
 # Car_name = 'car_name'

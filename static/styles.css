@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -12,3 +15,45 @@ th, td {
 th {
     background-color: #f2f2f2;
     }
+
+nav {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around
+}
+
+button {
+
+    padding: 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e6e41;
+}
+
+main {
+    background-color: #387578;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #b2cc91;
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+main button {
+    background-color: #ff5733;
+    width: 200px;
+}
+
+main button {
+    background-color: #e3461e;
+}

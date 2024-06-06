@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Car</title>
+</head>
+<body>
+    <h1>Add New Car</h1>
+    <form method="post" action="{{ url_for('add_car') }}">
+          <label for="car_name">Car Name:</label>
+        <input type="text" placeholder="text" id="car_name" name="car_name" required><br>
+
+        <label for="mileage_kmpl">Mileage km p l:</label>
+        <input type="number" placeholder="number" id="mileage_kmpl" name="mileage_kmpl" required><br>
+
+        <label for="model">Model:</label>
+        <input type="text" placeholder="text" id="model" name="model" required><br>
+
+        <label for="transmission">Transmission:</label>
+        <input type="text" placeholder="text" id="transmission" name="transmission" required><br>
+
+        <label for="transmission_type">Transmission Type:</label>
+        <input type="text" placeholder="text" id="transmission_type" name="transmission_type" required><br>
+
+        <label for="engine_type">Engine Type:</label>
+        <input type="text" placeholder="text" id="engine_type" name="engine_type" required><br>
+
+        <label for="cc_displacement">CC Displacement:</label>
+        <input type="number" placeholder="number" id="cc_displacement" name="cc_displacement" required><br>
+
+        <label for="power_bhp">Power BHP:</label>
+        <input type="number"  placeholder="number" id="power_bhp" name="power_bhp" required><br>
+
+        <label for="torque_nm">Torque Nm:</label>
+        <input type="number" placeholder="number" id="torque_nm" name="torque_nm" required><br>
+
+        <label for="fuel_type">Fuel Type:</label>
+        <input type="text" placeholder="text" id="fuel_type" name="fuel_type" required><br>
+
+        <label for="make">Make:</label>
+        <input type="text" placeholder="text" id="make" name="make" required><br>
+
+        <label for="body_type">Body Type:</label>
+        <input type="text" placeholder="text" id="body_type" name="body_type" required><br>
+
+        <label for="seating_capacity">Seating Capacity:</label>
+        <input type="number" placeholder="number" id="seating_capacity" name="seating_capacity" required><br>
+
+        <label for="fuel_tank_capacity">Fuel Tank Capacity:</label>
+        <input type="number" placeholder="number" id="fuel_tank_capacity" name="fuel_tank_capacity" required><br>
+
+        <label for="price">Price:</label>
+        <input type="number" placeholder="number" id="price" name="price" required><br>
+
+        <label for="make_year">Make Year:</label>
+        <input type="number" placeholder="number" id="make_year" name="make_year" required><br>
+
+        <label for="color">Color:</label>
+        <input type="text" placeholder="text" id="color" name="color" required><br>
+
+        <label for="mileage_run">Mileage Run:</label>
+        <input type="number" placeholder="number" id="mileage_run" name="mileage_run" required><br>
+
+        <label for="no_of_owners">Number of Owners:</label>
+        <input type="number" placeholder="number" id="no_of_owners" name="no_of_owners" required><br>
+
+        <button type="submit">Add Car</button>
+    </form>
+</body>
+</html>

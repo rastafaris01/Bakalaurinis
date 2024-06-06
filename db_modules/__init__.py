@@ -4,7 +4,7 @@ from constants.constant_url import URL
 from db_modules.db_tables import Transmission, Engine, ModelTypes, Model, Market
 from flask import Flask
 from db_modules.db_management import AutoDB
-from db_modules.db_tables import create_tables
+from db_modules.db_tables import create_tables, ManageCars
 
 Base = declarative_base()
 
@@ -13,8 +13,8 @@ engine = create_engine(URL)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-auto_db = AutoDB()
-auto_db.load_data()
+# auto_db = AutoDB()
+# auto_db.load_data()
 
 
 create_tables()

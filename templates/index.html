@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
+    <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-    <h1>Car Database</h1>
-    <a href="{{ url_for('cars') }}">View Cars</a> <br>
-    <a href="{{ url_for('transmissions') }}">View transmission</a> <br>
-    <a href="{{ url_for('engines') }}">View engines</a> <br>
-    <a href="{{ url_for('models') }}">View models</a> <br>
-    <a href="{{ url_for('model_types') }}">View model types</a> <br>
-    <a href="{{ url_for('markets') }}">View markets</a> <br>
+
+    <nav>
+        <a href="{{ url_for('cars') }}"><button>View all cars data</button></a>
+        <a href="{{ url_for('transmissions') }}"><button>View Transmissions</button></a>
+        <a href="{{ url_for('engines') }}"><button>View Engines</button></a>
+        <a href="{{ url_for('models') }}"><button>View Models</button></a>
+        <a href="{{ url_for('model_types') }}"><button>View Model Types</button></a>
+        <a href="{{ url_for('markets') }}"><button>View Markets</button></a>
+    </nav>
+    <main>
+        <h2>You can add new car to database</h2>
+        <a href="{{ url_for('add_car') }}"><button id="addButton">Add</button></a>
+        <h2>Update current car to database</h2>
+         <a href=><button id="updateButton">Under Construction</button></a>
+        <h2>Delete car from database</h2>
+        <a href=><button id="delButton">Under Construction</button></a>
+    </main>
+
 </body>
 </html>
+

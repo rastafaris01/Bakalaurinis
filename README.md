@@ -4,11 +4,6 @@ Overview
 This project is a comprehensive Auto Database Management System designed to store, manage, and retrieve information about cars, their engines, transmissions, models, and market data. 
 It utilizes SQLAlchemy for ORM and Flask for the web interface. The data is initially loaded from a CSV file into the database, and the web interface allows for viewing and adding new car data.
 
-Project Structure
-------------------
-Under Construction
-------------------
-
 
 Install dependencies: 
 pip install -r requirements.txt
